@@ -1,5 +1,5 @@
 # Dockerfile - updated (python 3.11 on slim-bookworm)
-FROM python:3.11-slim-bookworm
+FROM python:3.10-slim-bookworm
 
 LABEL maintainer="you@example.com"
 ENV PYTHONUNBUFFERED=1 \
@@ -37,4 +37,5 @@ USER botuser
 ENV PATH="/home/botuser/.local/bin:${PATH}"
 
 CMD ["python", "bot.py"]
+
 
